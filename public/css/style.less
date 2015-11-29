@@ -222,7 +222,7 @@
 	}
 	p a, p a:visited { 
 		line-height: inherit;
-		color: @brandPurpleMed;
+		color: inherit
 	}
 	a.see_all { 
 		position:absolute; 
@@ -239,14 +239,14 @@
 	
 	ul, ol { 
 		padding: 0; 
-		.margin-bottom(15);
+        margin-bottom:15px;
 		overflow: hidden;
 	}
 	ul { 
 		list-style: none; 
 	}
 	ol { 
-		.padding-left(20);
+		padding-left: 20px;
 		list-style: decimal; 
 	}
 	ul ul,
@@ -283,10 +283,10 @@
 	}
 	dl dt { 
 		font-weight:bold;
-		.padding-bottom(2);
+		padding-bottom: 2px;
 	}	
 	dl dd { 
-		.padding-bottom(5); 
+		padding-bottom: 2px; 
 	}
 		
 	
@@ -361,14 +361,14 @@
 
 		body { 
 			width: 100%;
-			color: @copyColor;
+            color: #000;
 		} 
 		body,	
 		input,
 		select,
 		textarea, 
 		button {
-			.font-size(14);
+			font-size: 14px;
 			font-family: Arial, sans-serif;
 			font-weight:400;
 			line-height: 1.2;
@@ -380,21 +380,21 @@
 			font-weight: normal;
 			line-height: 1.2;
 			font-family: 'dinbold', Arial, verdana;
-			color: @brandPurple;
+			color: #000;
 		}
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { 
 			font-weight: inherit; 
 		}
-		h1 {.font-size(36); .padding(0,0,5,0);}
-		h2 {.font-size(28); .padding(0,0,5,0);}
-		h3 {.font-size(24); .padding(15,0,10,0);}
-		h4 {.font-size(20); .padding(10,0,10,0);}
-		h5{.font-size(18); .padding(10,0,10,0);}
-		h6{.font-size(14); .padding(10,0,10,0);}
+		h1 {font-size:36px; .padding(0,0,5,0);}
+		h2 {font-size:28px; .padding(0,0,5,0);}
+		h3 {font-size:24px; .padding(15,0,10,0);}
+		h4 {font-size:20px; .padding(10,0,10,0);}
+		h5{font-size:18px; .padding(10,0,10,0);}
+		h6{font-size:14px; .padding(10,0,10,0);}
 		
 		p, div.text { 
 			.padding(0,0,15,0);
-			.line-height(22);
+			line-height:22px;
 		}
 		p img { 
 			margin: 0; 
@@ -404,24 +404,24 @@
 		strong, b { font-weight: bold; line-height: inherit; }
 		small { font-size: 80%; line-height: inherit; }
 		
-		hr { border: solid @lightBorder; border-width: 1px 0 0; clear: both; margin: 20px auto; height: 0; width:100%; }
+		hr { border: solid #000; border-width: 1px 0 0; clear: both; margin: 20px auto; height: 0; width:100%; }
 		
-		abbr, acronym { text-transform: uppercase; font-size: 90%; border-bottom: 1px solid @lightBorder; cursor: help; }
+		abbr, acronym { text-transform: uppercase; font-size: 90%; border-bottom: 1px solid #000; cursor: help; }
 		abbr { text-transform: none; }
 
 		::-webkit-input-placeholder { /* WebKit browsers */
-			color: @inputPHColor;
+			color: #000;
 		}
 		:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-		   color: @inputPHColor;
+		   color: #000;
 		   opacity:  1;
 		}
 		::-moz-placeholder { /* Mozilla Firefox 19+ */
-		   color: @inputPHColor;
+		   color: #000;
 		   opacity:  1;
 		}
 		:-ms-input-placeholder { /* Internet Explorer 10+ */
-		   color: @inputPHColor;
+		   color: #000;
 		}
 
 
@@ -467,4 +467,4 @@
 				background-size: 218px 25px;
 				background-size: 21.8rem 2.5rem;
 			}
-		}
+		} 
