@@ -173,7 +173,8 @@
 
 	@black: #000000;
 	@white: #FFFFFF;
-
+    @mainTheme: #eb5c4a;
+    @fontColor: #606b70;
 
 
 /*	4.0 ----------------------------------------------
@@ -436,6 +437,33 @@
 .row {
     overflow: hidden;
 }
+
+.header-container{
+    overflow: hidden;
+}
+
+.logo{
+    color: @mainTheme;
+    float: left;
+}
+
+nav{
+    overflow: hidden;
+    
+    li{
+        list-style: none;
+        float: left;
+        
+        a{
+            color: @fontColor;
+        }
+    }
+}
+
+.camp-button{
+    float: right;
+}
+
 
         
 
