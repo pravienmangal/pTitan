@@ -2,6 +2,15 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 
+		concat: {
+		    dist: {
+		        src: [
+		            'public/**/*.js', // All JS in the libs folder
+		            'js/global.js'  // This specific file
+		        ],
+		        dest: 'dist/js/production.js',
+		    }
+		},
 		jshint: {
 			options: {
 				reporter: require('jshint-stylish')
