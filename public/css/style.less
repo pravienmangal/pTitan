@@ -532,7 +532,7 @@
             text-transform: uppercase;
         }
         .hero-container{
-            background: url("../../public/images/help.jpg") no-repeat;
+            background: url("../../public/images/home-hero.jpg") no-repeat;
             background-size: cover;
             overflow: hidden;
             width: 100%;
@@ -579,6 +579,7 @@
                         margin-bottom: 20px;
                         background: @white;
                         .border-radius(4,4,4,4);
+                        overflow: hidden;
                         
                         img {
                             .border-radius(4,0,0,4);
@@ -586,9 +587,20 @@
                         
                         &-info {
                             .padding(10,10,10,10);
+                            overflow: hidden;
                             
                             h3 {
                                 padding-top: 0;
+                            }
+                            a.button {
+                                color: @white;
+                                text-transform: uppercase;
+                                background: @brandColour;
+                                .padding(5,20,5,20);
+                                font-size: 12px;
+                                font-family: 'open_sanssemibold';
+                                float: right;
+                                .border-radius(2,2,2,2);
                             }
                         }
                     }
