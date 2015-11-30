@@ -438,8 +438,13 @@
     overflow: hidden;
 }
 
+body{
+    background: #f1f1e9;
+}
+
 .header-container{
     overflow: hidden;
+    background: #fff;
 }
 
 .logo{
@@ -449,6 +454,9 @@
 
 nav{
     overflow: hidden;
+    float: right;
+    width: 500px;
+    padding: 20px;
     
     li{
         list-style: none;
@@ -456,12 +464,74 @@ nav{
         
         a{
             color: @fontColor;
+            font-size: 14px;
+            text-transform: uppercase;
+            padding: 15px;
+            letter-spacing: 1px;
+        }
+        
+        a:hover{
+            color: @mainTheme;
         }
     }
 }
 
 .camp-button{
     float: right;
+    position: absolute;
+    top: -15px;
+    right: 0;
+    margin-top: 15px;
+    background-color: @mainTheme;
+    color: #fff;
+    border: none;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.hero-container{
+    background: url("../../public/images/help.jpg") no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    width: 100%;
+    height: 450px;
+    text-align: center;
+    h1{
+        color: #fff;
+        margin-top: 150px;
+       
+    }  
+    
+    h2{
+        color: #fff;
+    }
+    
+    .campaign{
+        border: none;
+        background: @mainTheme;
+        padding: 20px;
+        font-size: 18px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    
+}
+
+
+.row-content{
+    overflow: hidden;
+    width: 1580px;
+    margin: 0 auto;
+    
+    h2{
+        text-align: center;
+        color: @fontColor;
+        padding: 10px;
+    }
+    
+    .campaign-list{
+        
+    }
 }
 
 
