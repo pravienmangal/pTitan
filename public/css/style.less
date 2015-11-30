@@ -580,13 +580,14 @@
                         background: @white;
                         .border-radius(4,4,4,4);
                         overflow: hidden;
+                        height: 418px;
                         
                         img {
                             .border-radius(4,0,0,4);
                         }
                         
                         &-info {
-                            .padding(10,10,10,10);
+                            .padding(15,15,15,15);
                             overflow: hidden;
                             
                             h3 {
@@ -601,6 +602,16 @@
                                 font-family: 'open_sanssemibold';
                                 float: right;
                                 .border-radius(2,2,2,2);
+                                display: none;
+                            }
+                        }
+                    }
+                    &:hover {
+                        .campaign-list-item {
+                            &-info {
+                                a.button {
+                                    display: block;
+                                }
                             }
                         }
                     }
