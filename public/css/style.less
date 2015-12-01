@@ -637,8 +637,24 @@
         }
         .camapign-image {
             background: @white;
-            margin-bottom: 25px;
+            margin-bottom: 15px;
         }
+
+        .share-option {
+            overflow: hidden;
+            margin-bottom: 25px;
+            
+            ul {
+                overflow: hidden;
+                float: right;
+                
+                li {
+                    float: left;
+                    padding: 0 5px;
+                }
+            }
+        }        
+
         .title-area {
             text-align: center;
             color: @copyColor;
@@ -699,17 +715,52 @@
             }
         }
 
-        .donor-info{
+        .donor-info {
             overflow: hidden;
             background: @white;
             border: 1px solid rgba(96,107,112,.1);    
             border-radius: 4px;
+            padding: 10px 15px;
             
-            h4{
-                font-size: 14px;
-                color: @white;
-                background: @brandColor;
+            h4 {
+                font-size: 18px;
+                color: @copyColor;
+                border-bottom: 1px solid rgba(96,107,112,.1);
+            }
+            
+            ul {
+                overflow: hidden;
                 
+                li {
+                    overflow: hidden;
+                    border-bottom: 1px solid rgba(96,107,112,.1);
+                    
+                                h2 {
+                                    text-align: left;
+                                    padding: 2px;
+                                }
+
+                                span{
+                                    font-weight: bold;
+                                }
+
+                                .don-date{
+                                    font-style: italic;
+                                    font-size: 12px;
+                                }
+                    }
+                }  
+            
+
+        }
+
+        .campaigner-details {
+            .donor-info;
+            
+            margin-top: 15px;
+            
+            span{
+                font-weight: bold;
             }
         }
 
