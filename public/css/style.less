@@ -506,6 +506,7 @@
             width: 100%;
             z-index: 999;
             top: 0;
+            box-shadow: 0 1px 20px #E0E0E0;
         }
         .logo{
             color: @brandColor;
@@ -665,7 +666,7 @@
                     font-family: 'open_sansregular';
                     font-size: 14px;
                     line-height: 16px;
-                    .margin(2,0,5,0);
+                    .margin(2,0,10,0);
                     
                     strong {
                         font-size: 18px;
@@ -697,6 +698,22 @@
                 margin-bottom: 15px;
             }
         }
+
+        .donor-info{
+            overflow: hidden;
+            background: @white;
+            border: 1px solid rgba(96,107,112,.1);    
+            border-radius: 4px;
+            
+            h4{
+                font-size: 14px;
+                color: @white;
+                background: @brandColor;
+                
+            }
+        }
+
+        
     /*	8.2 ----------------------------------------------
 		DEVICE WIDTH FROM 641
 		-------------------------------------------------- */
