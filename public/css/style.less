@@ -759,8 +759,52 @@
             
             margin-top: 15px;
             
-            span{
+            span {
                 font-weight: bold;
+                font-size: 16px;    
+            }
+        }
+
+        .quick-pay {
+            .donor-info;
+            margin-bottom: 15px;
+            
+            h4{
+                margin-bottom: 5px;
+            }
+            
+            li {
+                float: left;
+                padding: 5px;
+                background: @brandColor;
+                margin-right: 10px;
+                color: @white;
+                width: 50px;
+                font-size: 23px;
+                overflow: hidden;
+                border-radius: 4px;
+                
+                &:last-child {
+                    width: 98px;
+                }
+                
+                p {
+                    padding: 2px;
+                    font-size: 10px;
+                }
+            
+                
+                .donate-amount {
+                    width: 75px;
+                }
+            }
+            
+            .donate-submit {
+                border: none;
+                background: @brandColor;
+                color: @white;
+                padding: 5px;
+                float: right;
             }
         }
 
