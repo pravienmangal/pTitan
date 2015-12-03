@@ -40,49 +40,59 @@
                     </div>
                 </div>
                 <div class="col-sm-9">
-                    <div class="quick-checkout grey-pod">
-                        <h2>Quick checkout</h2>
-                        <p>Save time by using Facebook or Google log-in to pre-fill some of your details. Don't worry - we will never post to your timeline.</p>
-                        <a href="" class="social-button facebook"><i class="icon icon-facebook"></i></a>
-                        <a href="" class="social-button google"><i class="icon icon-google"></i></a>
-                    </div>
-                    <div class="checkout-with-email">
-                        <h2>Checkout with email <span>Have an account? <a href="#">Login</a></span></h2>
-                        <form action="">
+                    <form action="">
+                        <div class="donation-amount">
                             <div class="form-group">
-                                <input class="" type="email" placeholder="Email" name="email">
+                               <div class="row">
+                                   <div class="col-xs-2"><input type="radio" name="donation-mentod"><span>Donate the ticket value</span></div>
+                                   <div class="col-xs-10"><div class="ticket-value"><span class="currency">£</span>20</div></div>
+                               </div>
+                               <div class="row">
+                                    <input type="radio" name="donation-mentod"><span>Donate more</span>
+                                    <span class="currency">£</span><input type="text" name="donation-amount" />
+                               </div>
                             </div>
-                             <div class="form-group">
-                                <input class="" type="password" placeholder="Password" name="password">
-                            </div>
-                        </form>
-                    </div>
-                    <div class="donor-details">
-                        <h2>Your details</h2>
-                        <p>We need a couple details in case something changes. We'll send the tickets to your phone and email.</p>
-                        <form action="">
-                            <div class="form-group">
-                                <input class="" type="text" placeholder="First name" name="firstname">
-                            </div>
-                             <div class="form-group">
-                                <input class="" type="text" placeholder="Last name" name="lastname">
-                            </div>
-                            <div class="form-group">
-                                <input class="" type="email" placeholder="Email" name="email">
-                            </div>
-                            <div class="form-group">
-                                <select name="country" id="country">
-                                    <option value="United Kingdom">United Kingdom</option>
-                                    <option value="Sri Lanka">Sri Lanka</option>
-                                    <option value="India">India</option>
-                                    <option value="United States">United States</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <input class="" type="text" placeholder="Postal code" name="postalcode">
-                            </div>
-                        </form>
-                    </div>
+                        </div>
+                        <div class="quick-checkout grey-pod">
+                            <h2>Quick checkout</h2>
+                            <p>Save time by using Facebook or Google log-in to pre-fill some of your details. Don't worry - we will never post to your timeline.</p>
+                            <a href="" class="social-button facebook"><i class="icon icon-facebook"></i></a>
+                            <a href="" class="social-button google"><i class="icon icon-google"></i></a>
+                        </div>
+                        <div class="checkout-with-email">
+                            <h2>Checkout with email <span>Have an account? <a href="#">Login</a></span></h2>
+                                <div class="form-group">
+                                    <input class="" type="email" placeholder="Email" name="email">
+                                </div>
+                                 <div class="form-group">
+                                    <input class="" type="password" placeholder="Password" name="password">
+                                </div>
+                        </div>
+                        <div class="donor-details">
+                            <h2>Your details</h2>
+                            <p>We need a couple details in case something changes. We'll send the tickets to your phone and email.</p>
+                                <div class="form-group">
+                                    <input class="" type="text" placeholder="First name" name="firstname">
+                                </div>
+                                 <div class="form-group">
+                                    <input class="" type="text" placeholder="Last name" name="lastname">
+                                </div>
+                                <div class="form-group">
+                                    <input class="" type="email" placeholder="Email" name="email">
+                                </div>
+                                <div class="form-group">
+                                    <select name="country" id="country">
+                                        <option value="United Kingdom">United Kingdom</option>
+                                        <option value="Sri Lanka">Sri Lanka</option>
+                                        <option value="India">India</option>
+                                        <option value="United States">United States</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input class="" type="text" placeholder="Postal code" name="postalcode">
+                                </div>
+                        </div>
+                    </form>
                     <div class="pay-with-paypal grey-pod">
                         <h3>PAYPAL <i icon icon-paypal></i></h3>
                         <p>After clicking this button, you’ll be redirected to PayPal’s site where you can pay with your credit card or PayPal account.</p>
