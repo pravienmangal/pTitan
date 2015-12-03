@@ -654,18 +654,19 @@
                 }
             }
         }        
-
         .title-area {
             text-align: center;
             color: @copyColor;
             .margin(10,0,20,0);
         }
-        .campaign-stats { 
+        .white-pod {
             background: @white;
             .padding(10,15,10,15);
             border: 1px solid rgba(96,107,112,.1);
             .border-radius(4,4,4,4);
             overflow: hidden;
+        }
+        .campaign-stats { 
             
             h2 {
                 color: @copyColor; 
@@ -714,7 +715,6 @@
                 margin-bottom: 15px;
             }
         }
-
         .donor-info {
             overflow: hidden;
             background: @white;
@@ -727,7 +727,6 @@
                 color: @copyColor;
                 border-bottom: 1px solid rgba(96,107,112,.1);
             }
-            
             ul {
                 overflow: hidden;
                 
@@ -750,10 +749,7 @@
                                 }
                     }
                 }  
-            
-
         }
-
         .campaigner-details {
             .donor-info;
             
@@ -764,7 +760,6 @@
                 font-size: 16px;    
             }
         }
-
         .quick-pay {
             .donor-info;
             margin-bottom: 15px;
@@ -807,7 +802,39 @@
                 float: right;
             }
         }
-
+        .campaign-teaser {
+            font-size: 12px;
+            line-height: 16px;
+            
+            &-image {
+                .margin(-10,-15,15,-15);
+            }
+            &-details {
+                h1 {
+                    font-family: 'open_sansregular';
+                    font-size: 22px;
+                    line-height: 26px;
+                    color: @copyColor;
+                }
+                p {
+                    line-height: 16px;
+                }
+            }
+            .campainer {
+                margin-bottom: 15px;
+                overflow: hidden;
+                
+                img {
+                    max-width: 50px;
+                    float: left;
+                    margin-right: 15px;
+                }
+            }
+            .date {
+                clear: both;
+                
+            }
+        }
         
     /*	8.2 ----------------------------------------------
 		DEVICE WIDTH FROM 641
