@@ -492,6 +492,10 @@
             &.row-one {
                 margin-top: 70px;
             }
+            .row {
+				margin-left:-10px;
+				margin-right:-10px;
+            }
         }
         header {
             overflow: hidden;
@@ -898,11 +902,15 @@
                 border-radius: 4px;
                 .padding(15,10,15,10);
                 width: 100%;
+                font-size: 18px;
             }
             &.half {
                 width: 49%;
                 margin-right: 1%;
                 float: left;
+            }
+            input[type="radio"] {
+                width: auto;
             }
         }
         .donor-details {
@@ -924,6 +932,57 @@
             .paypal-button img {
                 width: 150px;
                 margin:  20px auto;
+            }
+        }
+        .donation-amount {
+            margin-bottom: 40px;
+            .padding(0,30,25,30);
+            overflow: hidden;
+            
+            .ticket-value {
+                font-size: 30px;
+                line-height: 32px;
+            }
+            .row {
+                margin-bottom: 20px;
+                
+                input[type="radio"] {
+                    float: left;
+                }
+                span{
+                    margin-left: 20px;
+                }
+                .currency {
+                    
+                }
+            }
+            .donation-value {
+                position: relative;
+                
+                input[type="text"] {
+                    border: none;
+                    border-bottom:  1px solid #ebebeb;
+                    border-radius: 0;
+                    font-size: 80px;
+                    text-align: right;
+                    .padding(0,110,0,55);
+                    color: @brandColor;
+                }
+                &:after {
+                    position: absolute;
+                    right: 0;
+                    bottom: 6px;
+                    font-size: 80px;
+                    content: '.00';
+                    color: @brandColor;
+                }
+                .currency {
+                    position: absolute;
+                    left: 0;
+                    bottom: 6px;
+                    font-size: 50px;
+                    margin: 0;
+                }
             }
         }
         
