@@ -909,12 +909,32 @@
             text-align: center;
             font-size: 14px;
             padding: 15px;
-
+            background: #eaeae1;
+            
+            a:hover {
+                color: @brandColor;
+            }
+            
             span{
                 text-transform: uppercase;
                 font-weight: bolder;
                 color: @copyColor;
                 font-size: 16px;
+            }
+            
+            .sign-up-button {
+                color: #FFFFFF;
+                padding: 20px 80px 20px 80px;
+                margin: 20px 20px 0px 0px;
+                border-radius: 4px;
+                display: inline-block;
+                font-family: 'open_sanssemibold';
+                margin-top: 20px;
+                font-size: 12px;
+                line-height: 1;
+                background: @brandColor;
+                text-transform: uppercase;
+
             }
         }
         .quick-checkout {
@@ -986,6 +1006,18 @@
                 margin:  20px auto;
             }
         }
+        .email-sign-up {
+            overflow: hidden;
+            
+            input {
+                background: 0;
+                font-size: 20px;
+                color: @copyColor;
+                border-bottom: 2px solid rgba(96,107,112,.2);
+                margin-bottom: 10px;
+            }
+        }
+        
 
         
     /*	8.2 ----------------------------------------------
