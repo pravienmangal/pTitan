@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset = "UTF-8"/>
+       <link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css">
+       <link rel="stylesheet" type="text/css" href="../../dist/css/style.css">
+        <title>Campaign Page</title>
+    </head>
+    <body>
+        <header>
+           <div class="header-container">
+               <div class="logo"><a href="#"><img src="../../public/images/logo-qol.png" alt="logo"></a></div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <button class="camp-button">Start Campaign</button>
+           </div>
+        </header>
+        <section class="row title-area row-one">
+            <div class="row-content">
+                <div class="col-sm-12">
+                    <h1>Start your campaign</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie magna sit amet velit varius fringilla. Quisque eros quam, vestibulum nec nisi vitae, facilisis elementum leo. Vestibulum vel volutpat ipsum.</p>
+                </div>
+            </div>
+        </section>    
+        <section class="row">
+            <div class="row-content">
+                <div class="col-sm-8">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="goal_amount">How much money would you like to raise?</label>
+                            <input type="text" name="goal_amount" id="goal_amount">
+                            <select name="goal_amount" id="goal_amount">
+                                <option value="GBP">GBP</option>
+                                <option value="USD">USD</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="campaign_title">What's the tile of your campaign?</label>
+                            <input type="text" name="campaign_title" id="campaign_title">
+                        </div>
+                        <div class="form-group">
+                         <label for="goal_amount">How much money would you like to raise?</label>
+                           <select name="campaign_category" id="campaign_category">
+                                <option value="">Choose a category</option>
+                                <option value="USD">USD</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button>CREATE</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
