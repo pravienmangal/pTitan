@@ -3,5 +3,6 @@ appTitan.controller('mainController', ['$scope', function($scope){
     
     $scope.switchForm = function(newForm){
         $scope.form = newForm;
+
     };
 }]);
