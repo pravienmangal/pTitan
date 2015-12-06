@@ -1,0 +1,1 @@
+var appTitan = angular.module('appTitan', []);
