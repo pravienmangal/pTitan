@@ -1074,15 +1074,34 @@
                 margin-bottom: 10px;
             }
         }
-        footer{
+        footer {
             overflow: hidden;
+            background: @white;
             
-            .footer-container{
+            .footer-container {
                 overflow: hidden;
+                padding: 50px;
+                width: 900px;
+                margin: 0 auto;
                 
-                h4{
-                    padding-bottom: 15px;
+                .footer-content {
+                    overflow: hidden;
+                    text-align: center;
+                    
+                    section {
+                        float: left;
+                        
+                        h4{
+                            color: @copyColor;
+                        }
+                        
+                        a:hover{
+                            color: @brandColor;
+                        }
+                    }
+                    
                 }
+
             }
         }
 
