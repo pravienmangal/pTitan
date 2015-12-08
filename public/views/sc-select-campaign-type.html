@@ -2,11 +2,17 @@
 <html>
     <head>
        <meta charset = "UTF-8"/>
+       <script type="text/javascript" src="../../public/js/jquery-1.11.3.min.js"></script>
+       <script type="text/javascript" src="../../public/js/bootstrap/bootstrap.min.js"></script>
+       <script type="text/javascript" src="../../public/js/angular-1.4.8.min.js"></script>
+       <script type="text/javascript" src="//code.angularjs.org/1.3.0-rc.1/angular-route.min.js"></script>
+       <script type="text/javascript" src="../../public/js/app.js"></script>
+       <script type="text/javascript" src="../../public/js/controllers/mainController.js"></script>
        <link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css">
        <link rel="stylesheet" type="text/css" href="../../dist/css/style.css">
-        <title>Campaign Page</title>
+        <title>pTitan</title>
     </head>
-    <body>
+    <body ng-app="appTitan" ng-controller="mainController">
         <header>
            <div class="header-container">
                <div class="logo"><a href="#"><img src="../../public/images/logo-qol.png" alt="logo"></a></div>
@@ -20,38 +26,48 @@
                 <button class="camp-button">Start Campaign</button>
            </div>
         </header>
-        <section class="row title-area row-one">
-            <div class="row-content">
-                <div class="col-sm-12">
-                    <h1>Select your campaign type</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie magna sit amet velit varius fringilla. Quisque eros quam, vestibulum nec nisi vitae, facilisis elementum leo. Vestibulum vel volutpat ipsum.</p>
+        <div ng-view></div>
+        <div>
+            <section class="row title-area row-one">
+                <div class="row-content">
+                    <div class="col-sm-12">
+                        <h1>Select your campaign type</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie magna sit amet velit varius fringilla. Quisque eros quam, vestibulum nec nisi vitae, facilisis elementum leo. Vestibulum vel volutpat ipsum.</p>
+                    </div>
                 </div>
-            </div>
-        </section>    
-        <section class="row">
-            <div class="row-content">
-                <div class="col-xs-4">
-                    <div class="campaign-type-pod white-pod">
-                        <img src="http://lorempixel.com/640/400/abstract/10/" alt="" />
-                        <h2>For a cause</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie magna sit amet velit varius fringilla.</p>
-                    </div>
-                 </div>
-                <div class="col-xs-4">
-                    <div class="campaign-type-pod white-pod">
-                        <img src="http://lorempixel.com/640/400/abstract/8/" alt="" />
-                        <h2>For an event</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie magna sit amet velit varius fringilla.</p>
-                    </div>
-                 </div>
-                <div class="col-xs-4">
-                    <div class="campaign-type-pod white-pod">
-                        <img src="http://lorempixel.com/640/400/abstract/6/" alt="" />
-                        <h2>For a project</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie magna sit amet velit varius fringilla.</p>
-                    </div>
-                 </div>
-            </div>
-        </section>
+            </section>    
+            <section class="row">
+                <div class="row-content">
+                    <div class="col-xs-4">
+                        <a href="#/step-one">
+                            <div class="campaign-type-pod white-pod">
+                                <img src="http://lorempixel.com/640/400/abstract/10/" alt="" />
+                                <h2>For a cause</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie magna sit amet velit varius fringilla.</p>
+                            </div>
+                        </a>
+                     </div>
+                    <div class="col-xs-4">
+                        <a href="#/step-one">
+                            <div class="campaign-type-pod white-pod">
+                                <img src="http://lorempixel.com/640/400/abstract/8/" alt="" />
+                                <h2>For an event</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie magna sit amet velit varius fringilla.</p>
+                            </div>
+                        </a>
+                     </div>
+                    <div class="col-xs-4">
+                        <a href="#/step-one">
+                            <div class="campaign-type-pod white-pod">
+                                <img src="http://lorempixel.com/640/400/abstract/6/" alt="" />
+                                <h2>For a project</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie magna sit amet velit varius fringilla.</p>
+                            </div>
+                        </a>
+                     </div>
+                </div>
+            </section>
+            
+        </div>
     </body>
 </html>
