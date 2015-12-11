@@ -15,7 +15,7 @@ module.exports = function(grunt) {
 			options: {
 				reporter: require('jshint-stylish')
 			},
-			all: ['Grunfile.js', 'public/**/*.js']
+			all: ['Grunfile.js', 'public/**/*.js', '!public/js/jquery-1.11.3.min.js', '!public/js/angular-1.4.8.min.js', '!public/js/bootstrap/*.js']
 		},
 		uglify: {
 			options: {
