@@ -1,4 +1,5 @@
 appTitan.controller('mainController', ['$scope', function($scope){
+    // Signup form
     $scope.form = 'signup';
     
     $scope.switchForm = function(newForm){
@@ -6,5 +7,6 @@ appTitan.controller('mainController', ['$scope', function($scope){
 
     };
     
+    // Start camapaign
     $scope.startCampaignData = {};
 }]);
