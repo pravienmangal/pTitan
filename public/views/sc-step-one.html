@@ -32,10 +32,11 @@
                         </div>
                         <div class="form-group">
                             <button ui-sref="form.stepTwo">CREATE</button>
+                            <button type="submit" ng-click="createCampaign()">Submit Test</button>
                         </div>
                     </form>
                 </div>
             </div>
-            <p>Goal amount:{{ form.name }}</p>
+            <p>Goal amount:{{ startCampaignData.goalAmount }}</p>
             <p>Campaign Title:{{ startCampaignData.campaignTitle }}</p>
         </section>

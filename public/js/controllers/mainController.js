@@ -1,4 +1,4 @@
-appTitan.controller('mainController', ['$scope', function($scope){
+appTitan.controller('mainController', ['$scope', '$http', function($scope, $http){
     // Signup form
     $scope.form = 'signup';
     
@@ -9,4 +9,13 @@ appTitan.controller('mainController', ['$scope', function($scope){
     
     // Start camapaign
     $scope.startCampaignData = {};
+    $scope.createCampaign = function(){
+        $http.post('/startCampaign#/form/step-one', $scope.startCampaignData)
+            .success(function(data) {
+                console.log(data);
+            })
+            .error(function(data) {
+                console.log('Error: ' + data);
+            });
+    };
 }]);
