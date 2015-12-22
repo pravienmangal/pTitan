@@ -2,11 +2,16 @@
 <html>
     <head>
        <meta charset = "UTF-8"/>
+       <script type="text/javascript" src="../../public/js/jquery-1.11.3.min.js"></script>
+       <script type="text/javascript" src="../../public/js/bootstrap/bootstrap.min.js"></script>
+       <script type="text/javascript" src="../../public/js/angular-1.4.8.min.js"></script>
+       <script type="text/javascript" src="../../public/js/app.js"></script>
+       <script type="text/javascript" src="../../public/js/controllers/mainController.js"></script>
        <link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css">
        <link rel="stylesheet" type="text/css" href="../../dist/css/style.css">
        <title>Sign Up</title>
     </head>
-    <body>
+    <body ng-app="appTitan" ng-controller="mainController">
         <header>
            <div class="pop-up-header">
                <h4>Sign Up For Free With pTitan</h4>
@@ -28,7 +33,7 @@
                             </ul>
                         </div>
                         <h2>Or signup with email</h2>
-                        <div class="email-signup">
+                        <div class="email-signup" >
                             <form action="">
                                 <div class="form-group">
                                     <input type="text" placeholder="First name" name="firstname">
@@ -47,8 +52,8 @@
                                 </div>
                             </form>
                         </div>
-                        <h2>Or signin with email</h2>
-                        <div class="email-signup">
+                        <h2>Or signin with email </h2>
+                        <div class="email-signup" >
                             <form action="">
                                 <div class="form-group">
                                     <input class="" type="email" placeholder="Email" name="email">
@@ -67,7 +72,7 @@
         </section>
         <footer>
             <div class="pop-up-footer">
-                 <p>Already have an account? <a ahref="#">Log In</a></p>
+                 <p>Already have an account? <a href="#" ng-click="switchForm(signin)">Log In</a></p>
             </div>
         </footer>
     </body>
